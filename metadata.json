@@ -4,7 +4,9 @@
   "author": "Felipe Quintella",
   "summary": "Fork of sharumpe/tcpwrappers Manages tcpd/tcpwrappers in /etc/hosts.allow and /etc/hosts.deny.",
   "license": "Apache-2.0",
-  "source": "TBA",
+  "source": "https://github.com/ffquintella/puppet-tcpwrappers.git",
+  "project_page": "https://github.com/ffquintella/puppet-tcpwrappers",
+  "issues_url": "https://github.com/ffquintella/puppet-tcpwrappers/issues",
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
@@ -45,7 +47,7 @@
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 4.7.0 < 6.0.0"
+      "version_requirement": ">= 4.7.0 < 7.0.0"
     }
   ],
   "pdk-version": "1.7.0",
