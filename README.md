@@ -1,5 +1,7 @@
 # tcpwrappers
 
+This module is a fork form sharumpe/tcpwrappers. I decided to make it to allow compatibility with puppet and concat 6.
+
 This is a tcpwrappers module intended to configure simple allow/deny rules.
 
 This is provided as-is, YMMV.  If you're in Vagrant, make sure to include at least an allow for the "sshd" service.

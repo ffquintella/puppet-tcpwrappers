@@ -1,6 +1,6 @@
 {
   "name": "ffquintella-tcpwrappers",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Felipe Quintella",
   "summary": "Fork of sharumpe/tcpwrappers Manages tcpd/tcpwrappers in /etc/hosts.allow and /etc/hosts.deny.",
   "license": "Apache-2.0",
