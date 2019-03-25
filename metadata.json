@@ -1,0 +1,54 @@
+{
+  "name": "ffquintella-tcpwrappers",
+  "version": "1.0.4",
+  "author": "Felipe Quintella",
+  "summary": "Fork of sharumpe/tcpwrappers Manages tcpd/tcpwrappers in /etc/hosts.allow and /etc/hosts.deny.",
+  "license": "Apache-2.0",
+  "source": "TBA",
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.0.0 < 6.0.0"
+    },
+    {
+      "name": "puppetlabs/concat",
+      "version_requirement": ">= 1.0.4 < 6.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7.x"
+      ]
+    },
+    {
+      "operatingsystem": "OpenSuse",
+      "operatingsystemrelease": [
+        "13.1"
+      ]
+    },
+    {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": [
+        "7.x"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "14.04",
+        "16.04"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.7.0 < 6.0.0"
+    }
+  ],
+  "pdk-version": "1.7.0",
+  "template-url": "https://github.com/puppetlabs/pdk-templates",
+  "template-ref": "1.7.0-0-g57412ed"
+}
