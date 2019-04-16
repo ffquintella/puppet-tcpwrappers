@@ -28,7 +28,7 @@ describe 'tcpwrappers::deny', type: :define do
 
   context 'with ipv6 address' do
     let(:params) do
-      super().merge('address' => 'dead::beef/64')
+      super().merge('address' => '[dead::beef]/64')
     end
 
     it { is_expected.to compile }
