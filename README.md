@@ -55,9 +55,3 @@ tcpwrappers::allow { 'local_httpd':
   address => 'LOCAL',
 }
 ```
-
-## Contact
-
-nospam@macwebb.com
-
-If you send email, please include "sharumpe-tcpwrappers" in the subject line.
