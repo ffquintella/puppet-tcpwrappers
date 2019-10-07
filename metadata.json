@@ -1,6 +1,6 @@
 {
   "name": "ffquintella-tcpwrappers",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Felipe Quintella",
   "summary": "Fork of sharumpe/tcpwrappers Manages tcpd/tcpwrappers in /etc/hosts.allow and /etc/hosts.deny.",
   "license": "Apache-2.0",
@@ -14,7 +14,7 @@
     },
     {
       "name": "puppetlabs/concat",
-      "version_requirement": ">= 1.0.4 < 6.0.0"
+      "version_requirement": ">= 1.0.4 < 7.0.0"
     }
   ],
   "operatingsystem_support": [
