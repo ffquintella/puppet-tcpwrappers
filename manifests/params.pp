@@ -4,7 +4,7 @@ class tcpwrappers::params
   $default_deny_all  = false
 
   $package_ensure = 'present'
-  $package_name = $facts['osfamily'] ? {
+  $package_name = $os['family'] ? {
     'Debian' => 'tcpd',
     'RedHat' => 'tcp_wrappers',
     'Suse'   => 'tcpd',
