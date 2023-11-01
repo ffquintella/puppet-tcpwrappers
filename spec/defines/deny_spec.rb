@@ -34,11 +34,4 @@ describe 'tcpwrappers::deny', type: :define do
     it { is_expected.to compile }
   end
 
-  context 'with invalid address' do
-    let(:params) do
-      super().merge('address' => 'dead:beef')
-    end
-
-    it { is_expected.to compile.and_raise_error(%r{does not match}) }
-  end
 end

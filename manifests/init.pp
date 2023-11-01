@@ -1,35 +1,21 @@
 class tcpwrappers
 (
   # lint:ignore:variable_is_lowercase
-  $defaultAllowAll   = $tcpwrappers::params::default_allow_all,
-  $defaultDenyAll    = $tcpwrappers::params::default_deny_all,
+  Boolean $defaultAllowAll   = $tcpwrappers::params::default_allow_all,
+  Boolean $defaultDenyAll    = $tcpwrappers::params::default_deny_all,
   # lint:endignore
-  $default_allow_all = $tcpwrappers::params::default_allow_all,
-  $default_deny_all  = $tcpwrappers::params::default_deny_all,
-  $config_path       = $tcpwrappers::params::config_path,
-  $allow_path        = $tcpwrappers::params::allow_path,
-  $deny_path         = $tcpwrappers::params::deny_path,
-  $allow_message     = $tcpwrappers::params::allow_message,
-  $deny_message      = $tcpwrappers::params::deny_message,
-  $package_ensure    = $tcpwrappers::params::package_ensure,
-  $package_name      = $tcpwrappers::params::package_name
+  Boolean $default_allow_all = $tcpwrappers::params::default_allow_all,
+  Boolean $default_deny_all  = $tcpwrappers::params::default_deny_all,
+  String $config_path       = $tcpwrappers::params::config_path,
+  String $allow_path        = $tcpwrappers::params::allow_path,
+  String $deny_path         = $tcpwrappers::params::deny_path,
+  String $allow_message     = $tcpwrappers::params::allow_message,
+  String $deny_message      = $tcpwrappers::params::deny_message,
+  String $package_ensure    = $tcpwrappers::params::package_ensure,
+  String $package_name      = $tcpwrappers::params::package_name
 )
 inherits tcpwrappers::params
 {
-
-  # lint:ignore:variable_is_lowercase
-  validate_bool($defaultAllowAll)
-  validate_bool($defaultDenyAll)
-  # lint:endignore
-  validate_bool($default_allow_all)
-  validate_bool($default_deny_all)
-  validate_string($config_path)
-  validate_string($allow_path)
-  validate_string($deny_path)
-  validate_string($allow_message)
-  validate_string($deny_message)
-  validate_string($package_ensure)
-  validate_string($package_name)
 
   contain tcpwrappers::install
   contain tcpwrappers::config

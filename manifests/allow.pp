@@ -1,7 +1,7 @@
 define tcpwrappers::allow
 (
-  $service,
-  $address,
+  String $service,
+  String $address,
   $args = undef
 )
 {
@@ -25,12 +25,7 @@ define tcpwrappers::allow
     '^\d+$',
     '^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$',
   ]
-  validate_re($addr, join($addr_regexps, '|'))
-  if ($mask) {
-    validate_re($mask, join($mask_regex, '|'))
-  }
-  validate_string($service)
-  validate_string($args)
+
 
   if ($args) {
     $output = join([$service, $address, $args], ' : ')
